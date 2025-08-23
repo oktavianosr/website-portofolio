@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .pause-animate{
+        animation-play-state: paused;
+    }
+
+    .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 300ms ease-in-out;
+    }
+}
+@layer utilities {
+  /* Span untuk area ketik: tidak wrap & posisi relatif utk kursor */
+  .typer {
+    @apply relative whitespace-pre;
+  }
+
+  /* Aktifkan kursor kedip (akan di-toggle via JS) */
+  .cursor-caret::after {
+    content: "";
+    /* posisikan di ujung teks */
+    @apply absolute right-0 inset-y-0 w-[2px] bg-current animate-caret;
+  }
+}

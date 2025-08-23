@@ -1,0 +1,638 @@
+<!doctype html>
+<html>
+<head>
+    <!-- <html lang="" class="@if(session('theme','light')==='dark') dark @endif"> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="./input.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <title>Oktaviano - Portfolio</title>
+  <link rel="icon" href="assets/images/logos/logoOSR.png" type="image/x-icon">
+     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Cursor blink saat mengetik */
+        .typer {
+        position: relative;
+        white-space: pre; /* hindari collapse spasi, menjaga lebar akurat */
+        }
+
+        .typer.typing::after {
+        content: "";
+        position: absolute;
+        right: 0;          /* tepat di ujung teks */
+        top: 0;
+        bottom: 0;
+        width: 2px;        /* tebal kursor */
+        background: currentColor; /* warna ikut teks */
+        animation: caret-blink 1s steps(1, end) infinite;
+        }
+
+        @keyframes caret-blink { 50% { opacity: 0; } }
+
+    </style>
+</head>
+<body class="text-portto-black font-poppins">
+    <!-- Navbar -->
+<!-- ✅ Fixed Navbar -->
+    <div id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-transparent ">
+        <nav class="container max-w-[1130px] mx-auto flex justify-between items-center pt-[30px] px-6 sm:px-0">
+            <div class="flex flex-col sm:flex-row gap-[30px] items-center">
+                <a href="./index.html" class="flex shrink-0 h-10 w-10">
+                    <img src="assets/images/logos/logoOSR.png" alt="logo" class="mr-[5px]"/>
+                    <p class="text-white font-bold text-lg mt-[5px]  mr-[5px]">My</p>
+                    <p class="text-portto-light-gold rounded-2xl font-bold text-lg mt-[5px]">Portofolio</p>
+                </a>
+                </div>
+            <button class="open-mobile-nav w-6 h-6 flex shrink-0 sm:hidden">
+            <img src="assets/images/icons/menu.svg" alt="icon" />
+            </button>
+            <div class="hidden sm:flex gap-[50px] items-center">
+            <ul class="flex gap-[50px] items-center text-white">
+                <li>
+                <a href="#" class="font-medium text-lg hover:text-portto-light-gold transition-all duration-300">Home</a>
+                </li>
+                <li>
+                <a href="#" class="font-medium text-lg hover:text-portto-light-gold transition-all duration-300">About</a>
+                </li>
+                <form action="" method="POST">
+                <button class="text-sm underline"></button>
+                </form>
+            </ul>
+            <button class="bg-portto-light-gold font-bold text-lg p-[14px_30px] rounded-full transition-all duration-300 hover:shadow-[0_10px_20px_0_#FFE7C280]">Hire Me</button>
+            </div>
+        </nav>
+    </div>
+
+    <section id="Header" class="mt-[50px] flex flex-col gap-[50px] sm:gap-[80px] bg-portto-black relative pt-[40px] sm:pt-[100px] pb-[50px] sm:pb-[150px]">
+        <div class="hero container max-w-[1130px] mx-auto flex flex-col sm:flex-row justify-between items-center relative px-6 sm:px-0 ">
+            <div class="flex flex-col gap-5 sm:gap-[50px] h-fit w-fit text-white z-10 typing-container mr-[25px]">
+                <p class="font-semibold text-lg sm:text-2xl transition-all duration-1000 transform -translate-y-full opacity-0">
+                    <span id="typed-name" class="typed-name"></span>
+                </p>
+                <h1 class="font-extrabold text-[32px] sm:text-[80px] leading-[60px] sm:leading-[90px] transition-all duration-1000 transform -translate-y-full opacity-0">
+                    <span id="typed-text" class="typed-text"></span>
+                </h1>
+                <div class="mt-2 text-sm sm:text-base text-gray-300" id="moto">
+                    <span id="typed-moto" class="typer"></span>
+                </div>
+                <a href="#Services" id="explore-button"> <button class="font-bold text-lg sm:text-[26px] sm:leading-[39px] rounded-full sm:rounded-[30px] p-[12px_30px] sm:p-[30px_40px] bg-portto-purple w-fit transition-all duration-500 hover:shadow-[0_10px_20px_0_#4920E5] bottom-[-20px]">Explore Now</button>
+                </a>
+            </div>
+            <div class="flex max-w-[471px] max-h-[567px] z-10 mt-10 sm:mt-0 shadow-[0_10px_20px_0_#0000001a] rounded-[30px] overflow-hidden relative animate-fadeIn">
+                <img src="assets/images/bg2.png" class="w-full h-full object-contain animate-fadeIn" alt="hero image">
+            </div>
+            <!-- <img src="assets/images/Ellipse.svg" class="absolute transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/3 sm:top-1/2" alt="background icon"> -->
+        </div>
+        <div class="company-logos w-full overflow-hidden pb-[190px]">
+            <div class="group/slider flex flex-nowrap w-max items-center">
+                <div class="logo-container animate-[slide_25s_linear_infinite] group-hover/slider:pause-animate  flex gap-[70px] pl-[70px] items-center flex-nowrap">
+                    <div class="flex w-fit h-[40px] shrink-0">
+                        <a href="https://instagram.com/oktvnrmdn_">
+                            <img src="assets/images/logos/instagram.png" class="w-full h-full object-contain" alt="logo">
+                        </a>
+                    </div>
+                    <div class="flex w-fit h-[40px] shrink-0">
+                        <a href="https://github.com/oktavianosr">
+                            <img src="assets/images/logos/github.png" class="w-full h-full object-contain" alt="logo">
+                        </a>
+                    </div>
+                    <div class="flex w-fit h-[40px] shrink-0">
+                        <a href="https://www.linkedin.com/in/oktaviano-sahru-romadhon-900242335/">
+                            <img src="assets/images/logos/linkedin.png" class="w-full h-full object-contain" alt="logo">
+                        </a>
+                    </div>
+                    <div class="flex w-fit h-[40px] shrink-0">
+                        <a href="https://github.com/oktavianosr">
+                            <img src="assets/images/logos/github.png" class="w-full h-full object-contain" alt="logo">
+                        </a>
+                    </div>
+                    <div class="flex w-fit h-[40px] shrink-0">
+                        <a href="https://instagram.com/oktvnrmdn_">
+                            <img src="assets/images/logos/instagram.png" class="w-full h-full object-contain" alt="logo">
+                        </a>
+                    </div>
+                    <div class="flex w-fit h-[40px] shrink-0">
+                        <a href="https://github.com/oktavianosr">
+                            <img src="assets/images/logos/github.png" class="w-full h-full object-contain" alt="logo">
+                        </a>
+                    </div>
+                    <div class="flex w-fit h-[40px] shrink-0">
+                        <a href="https://www.linkedin.com/in/oktaviano-sahru-romadhon-900242335/">
+                            <img src="assets/images/logos/linkedin.png" class="w-full h-full object-contain" alt="logo">
+                        </a>
+                    </div>
+                    <div class="flex w-fit h-[40px] shrink-0">
+                        <a href="https://github.com/oktavianosr">
+                            <img src="assets/images/logos/github.png" class="w-full h-full object-contain" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="logo-container animate-[slide_25s_linear_infinite] group-hover/slider:pause-animate  flex gap-[70px] pl-[70px] items-center flex-nowrap">
+                    <div class="flex w-fit h-[40px] shrink-0">
+                        <a href="https://instagram.com/oktvnrmdn_">
+                            <img src="assets/images/logos/instagram.png" class="w-full h-full object-contain" alt="logo">
+                        </a>
+                    </div>
+                    <div class="flex w-fit h-[40px] shrink-0">
+                        <a href="https://github.com/oktavianosr">
+                            <img src="assets/images/logos/github.png" class="w-full h-full object-contain" alt="logo">
+                        </a>
+                    </div>
+                    <div class="flex w-fit h-[40px] shrink-0">
+                        <a href="https://www.linkedin.com/in/oktaviano-sahru-romadhon-900242335/">
+                            <img src="assets/images/logos/linkedin.png" class="w-full h-full object-contain" alt="logo">
+                        </a>
+                    </div>
+                    <div class="flex w-fit h-[40px] shrink-0">
+                        <a href="https://github.com/oktavianosr">
+                            <img src="assets/images/logos/github.png" class="w-full h-full object-contain" alt="logo">
+                        </a>
+                    </div>
+                    <div class="flex w-fit h-[40px] shrink-0">
+                        <a href="https://instagram.com/oktvnrmdn_">
+                            <img src="assets/images/logos/instagram.png" class="w-full h-full object-contain" alt="logo">
+                        </a>
+                    </div>
+                    <div class="flex w-fit h-[40px] shrink-0">
+                        <a href="https://github.com/oktavianosr">
+                            <img src="assets/images/logos/github.png" class="w-full h-full object-contain" alt="logo">
+                        </a>
+                    </div>
+                    <div class="flex w-fit h-[40px] shrink-0">
+                        <a href="https://www.linkedin.com/in/oktaviano-sahru-romadhon-900242335/">
+                            <img src="assets/images/logos/linkedin.png" class="w-full h-full object-contain" alt="logo">
+                        </a>
+                    </div>
+                    <div class="flex w-fit h-[40px] shrink-0">
+                        <a href="https://github.com/oktavianosr">
+                            <img src="assets/images/logos/github.png" class="w-full h-full object-contain" alt="logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stats container max-w-[1130px] mx-auto bg-gradient-to-r from-[#FFEDD3] to-[#FFCD83] flex flex-col sm:flex-row gap-[30px] sm:gap-0 justify-between items-center sm:px-[100px] py-[30px] sm:py-0 rounded-[30px] w-[calc(100vw-48px)] sm:w-full sm:h-[180px] absolute transform -translate-x-1/2 translate-y-1/2 -bottom-[170px] sm:bottom-0 left-1/2">
+            <div class="text-center w-fit h-fit">
+                <p class="font-extrabold text-[32px] sm:text-[40px] leading-[48px] sm:leading-[60px]">>1 Year</p>
+                <p class="font-semibold text-lg">Experience</p>
+            </div>
+            <div class="text-center w-fit h-fit">
+                <p class="font-extrabold text-[32px] sm:text-[40px] leading-[48px] sm:leading-[60px]">7 </p>
+                <p class="font-semibold text-lg">Projects</p>
+            </div>
+            <div class="text-center w-fit h-fit">
+                <p class="font-extrabold text-[32px] sm:text-[40px] leading-[48px] sm:leading-[60px]">3</p>
+                <p class="font-semibold text-lg">Certificates</p>
+            </div>
+        </div>
+    </section>
+    <!----- EndOf Navbar -->
+
+    <!-- Services -->
+    <section id="Services" class="container max-w-[1130px] mx-auto pt-[485px] sm:pt-[190px] pb-[50px] sm:pb-[100px] px-6 sm:px-0">
+        <div class="flex flex-col gap-[30px] sm:gap-[50px]">
+            <div class="flex justify-between items-center">
+                <h2 class="font-extrabold text-[32px] sm:text-[50px] leading-[48px] sm:leading-[70px] w-[240px] sm:w-auto">What I Have Achieved<br class="hidden sm:block"></h2>
+                <a href="" class="hidden sm:block font-bold text-lg bg-portto-black rounded-full w-fit h-fit p-[14px_30px] text-white transition-all duration-300 hover:bg-white hover:text-portto-black hover:ring hover:ring-portto-black">All Services</a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-[30px]">
+                <div class="p-[30px] sm:p-[50px] pb-0 sm:pb-0 rounded-[30px] flex flex-col gap-[30px] sm:gap-[50px] bg-[#F4F5F8]">
+                    <div class="flex items-center justify-center shrink-0 w-20 h-20 rounded-full bg-portto-purple">
+                        <img src="assets/images/icons/crown.svg" class="w-10 h-10 object-contain" alt="icon">
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <p class="font-extrabold text-[26px] sm:text-[32px] leading-[39px] sm:leading-[48px]">Designed and Built a POS System — Final Project, Rumah Gemilang Indonesia</p>
+                        <p class="text-lg leading-[34px]">Successfully Create a POS System according to business logic, in a 6-month course and built a solid understanding of programming languages, frameworks, and databases</p>
+                    </div>
+                    <div class="w-full sm:h-[350px]">
+                        <img src="assets/images/image1.png" class="w-full object-contain" alt="image">
+                    </div>
+                </div>
+                <div class="p-[30px] sm:p-[50px] pb-0 sm:pb-0 rounded-[30px] flex flex-col gap-[30px] sm:gap-[50px] bg-[#F4F5F8]">
+                    <div class="flex items-center justify-center shrink-0 w-20 h-20 rounded-full bg-portto-green">
+                        <img src="assets/images/icons/code.svg" class="w-10 h-10 object-contain" alt="icon">
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <p class="font-extrabold text-[26px] sm:text-[32px] leading-[39px] sm:leading-[48px]">Completed the 7-class course at BuildWithAngga from starter to premium level</p>
+                        <p class="text-lg leading-[34px]">Established a solid understanding of programming basics and development workflow, particularly with the Laravel stack.</p>
+                    </div>
+                    <div class="w-full sm:h-[350px]">
+                        <img src="assets/images/image2.png" class="w-full object-contain" alt="image">
+                    </div>
+                </div>
+                <div class="sm:col-span-2 p-[30px] sm:p-[50px] pb-0 sm:pb-0 rounded-[30px] flex flex-col sm:flex-row gap-[30px] sm:gap-[50px] bg-[#F4F5F8]">
+                    <div class="flex flex-col gap-[50px]">
+                        <div class="flex items-center justify-center shrink-0 w-20 h-20 rounded-full bg-portto-red">
+                            <img src="assets/images/icons/3dcube.svg" class="w-10 h-10 object-contain" alt="icon">
+                        </div>
+                        <div class="flex flex-col gap-5">
+                            <p class="font-extrabold text-[26px] sm:text-[32px] leading-[39px] sm:leading-[48px]">Never Stop Learning</p>
+                            <p class="text-lg leading-[34px]">Since i deeply love programming, i always try to be better 1% every day and looking for new knowledge.</p>
+                        </div>
+                    </div>
+                    <div class="sm:w-[450px] sm:h-[350px] flex shrink-0">
+                        <img src="assets/images/image.png" class="w-full object-contain" alt="image">
+                    </div>
+                </div>
+            </div>
+            <a href="" class="sm:hidden text-center font-bold text-lg bg-portto-black rounded-full w-full h-fit p-[14px_30px] text-white transition-all duration-300 hover:bg-white hover:text-portto-black hover:ring hover:ring-portto-black">All Services</a>
+        </div>
+    </section>
+    <!-- EndOf Services -->
+
+
+    <!-- Workflow -->
+    <section id="Workflow" class="container max-w-[1130px] mx-auto pt-[50px] sm:pt-[100px] pb-[475px] sm:pb-[200px] relative">
+        <div class="flex flex-col gap-[50px] justify-center">
+            <h2 class="font-extrabold text-[32px] sm:text-[50px] leading-[48px] sm:leading-[70px] text-center">Learning By Doing <br>Hands-on Experience</h2>
+            <div class="flex flex-col sm:flex-row justify-between items-center px-[21.5px] sm:px-0 gap-[70px] sm:gap-0">
+                <div class="sm:w-[350px] flex flex-col shrink-0 gap-[30px] items-center">
+                    <div class="flex-none">
+                        <img src="assets/images/icons/messages-notif.svg" alt="icon">
+                    </div>
+                    <div class="flex flex-col gap-[10px] text-center">
+                        <p class="font-extrabold text-[22px] leading-[33px]">Practice Projects</p>
+                        <p class="text-lg leading-[34px]">Building real-world projects to apply and reinforce programming concepts</p>
+                    </div>
+                </div>
+                <div class="sm:w-[350px] flex flex-col shrink-0 gap-[30px] items-center">
+                    <div class="flex-none">
+                        <img src="assets/images/icons/programming-notif.svg" alt="icon">
+                    </div>
+                    <div class="flex flex-col gap-[10px] text-center">
+                        <p class="font-extrabold text-[22px] leading-[33px]">Problem Solving</p>
+                        <p class="text-lg leading-[34px]">Tackling coding challenges and debugging to develop critical thinking</p>
+                    </div>
+                </div>
+                <div class="sm:w-[350px] flex flex-col shrink-0 gap-[30px] items-center">
+                    <div class="flex-none">
+                        <img src="assets/images/icons/like-notif.svg" alt="icon">
+                    </div>
+                    <div class="flex flex-col gap-[10px] text-center">
+                        <p class="font-extrabold text-[22px] leading-[33px]">Contionuous Growth</p>
+                        <p class="text-lg leading-[34px]">Learning from each project staying updated with new technologies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EndOf Workflow -->
+
+
+    <!-- Hero -->
+    <section id="Testimonials" class="bg-[#F4F5F8] animate-fadeIn">
+        <div class="container max-w-[1130px] mx-auto pt-[180px] pb-[50px] sm:pb-[100px] px-6 sm:px-0">
+            <h2 class="font-extrabold text-[32px] sm:text-[50px] leading-[48px] sm:leading-[70px] text-center">
+                My Certificates
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-[50px] sm:gap-[30px] mt-[50px] items-stretch">
+
+                <!-- CARD 1 -->
+                <div class="card-testi bg-white rounded-[30px] flex flex-col p-5 gap-5 h-full group relative overflow-hidden">
+                    <div class="flex-1 flex items-center justify-center relative">
+                        <img src="assets/images/certi/laravel11.jpg" alt="" class="max-h-[300px] object-contain">
+
+                        <!-- Overlay -->
+                        <div class="absolute inset-0 bg-portto-green bg-opacity-0 flex flex-col items-center justify-center text-white opacity-0 transition-all duration-300 group-hover:bg-opacity-70 group-hover:opacity-100 rounded-[30px]">
+                            <p class="text-lg font-bold">Credential ID: 12345-ABC</p>
+                            <p class="text-sm mt-2">Issued by: BuildWithAngga</p>
+                            <p class="text-sm">Date: Aug 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="card-testi bg-white rounded-[30px] flex flex-col p-5 gap-5 h-full group relative overflow-hidden">
+                    <div class="flex-1 flex items-center justify-center relative">
+                        <img src="assets/images/certi/laravel10.jpg" alt="" class="max-h-[300px] object-contain">
+
+                        <!-- Overlay -->
+                        <div class="absolute inset-0 bg-portto-green bg-opacity-0 flex flex-col items-center justify-center text-white opacity-0 transition-all duration-300 group-hover:bg-opacity-70 group-hover:opacity-100 rounded-[30px]">
+                            <p class="text-lg font-bold">Credential ID: 67890-XYZ</p>
+                            <p class="text-sm mt-2">Issued by: Coursera</p>
+                            <p class="text-sm">Date: Jul 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="card-testi bg-white rounded-[30px] hidden sm:flex flex-col p-5 gap-5 h-full group relative overflow-hidden">
+                    <div class="flex-1 flex items-center justify-center relative">
+                        <img src="assets/images/certi/RPL.jpg" alt="" class="max-h-[300px] object-contain">
+
+                        <!-- Overlay -->
+                        <div class="absolute inset-0 bg-portto-green bg-opacity-0 flex flex-col items-center justify-center text-white opacity-0 transition-all duration-300 group-hover:bg-opacity-70 group-hover:opacity-100 rounded-[30px]">
+                            <p class="text-lg font-bold">Credential ID: 24680-LMN</p>
+                            <p class="text-sm mt-2">Issued by: Udemy</p>
+                            <p class="text-sm">Date: Jun 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- FAQ -->
+    <section id="FAQ" class="container max-w-[1130px] mx-auto px-6 sm:px-0">
+        <div class="flex flex-col sm:flex-row gap-[50px] sm:gap-[70px] items-center pt-[50px] sm:pt-[100px] pb-[100px] sm:pb-[150px]">
+            <div class="flex flex-col gap-[30px]">
+                <div class="w-20 h-20 flex shrink-0 rounded-full bg-portto-purple items-center justify-center">
+                    <img src="assets/images/icons/messages.svg" alt="icon">
+                </div>
+                <div class="flex flex-col gap-[10px]">
+                    <h2 class="font-extrabold text-[32px] sm:text-[50px] leading-[48px] sm:leading-[70px]">Frequently Asked Questions</h2>
+                    <p class="text-lg text-[#878C9C]">If you have any question please contact me.</p>
+                </div>
+                <a href="" class="bg-portto-black font-bold text-lg text-white rounded-full p-[14px_30px] w-fit transition-all duration-300 hover:bg-white hover:text-portto-black hover:ring hover:ring-portto-black">Contact Me</a>
+            </div>
+            <div class="flex flex-col gap-[30px] sm:w-[603px] shrink-0">
+                <div class="flex flex-col p-5 rounded-2xl bg-[#F4F5F8] w-full">
+                    <button class="accordion-button flex justify-between gap-1 items-center" data-accordion="accordion-faq-1">
+                        <span class="font-bold text-2xl text-left">How do I work usually?</span>
+                        <div class="arrow w-9 h-9 flex shrink-0">
+                            <img src="assets/images/icons/arrow-circle-down.svg" class="transition-all duration-300" alt="icon">
+                        </div>
+                    </button>
+                    <div id="accordion-faq-1" class="accordion-content hide">
+                        <p class="text-[20px] leading-[36px] pt-5">As a freelancer, my work process is characterized by flexibility, self-discipline, and a strong emphasis on client communication.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col p-5 rounded-2xl bg-[#F4F5F8] w-full">
+                    <button class="accordion-button flex justify-between gap-1 items-center" data-accordion="accordion-faq-2">
+                        <span class="font-bold text-2xl text-left">How much I charge per project?</span>
+                        <div class="arrow w-9 h-9 flex shrink-0">
+                            <img src="assets/images/icons/arrow-circle-down.svg" class="transition-all duration-300" alt="icon">
+                        </div>
+                    </button>
+                    <div id="accordion-faq-2" class="accordion-content hide">
+                        <p class="text-[20px] leading-[36px] pt-5">I don’t charge hourly. I charge based on the project brief and given timeline to finish that particular project.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col p-5 rounded-2xl bg-[#F4F5F8] w-full">
+                    <button class="accordion-button flex justify-between gap-1 items-center" data-accordion="accordion-faq-3">
+                        <span class="font-bold text-2xl text-left">Can I work full-time?</span>
+                        <div class="arrow w-9 h-9 flex shrink-0">
+                            <img src="assets/images/icons/arrow-circle-down.svg" class="transition-all duration-300" alt="icon">
+                        </div>
+                    </button>
+                    <div id="accordion-faq-3" class="accordion-content hide">
+                        <p class="text-[20px] leading-[36px] pt-5">I don’t work full-time. At this moment, I prefer to work remotely and based on the certain project only.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End FAQ -->
+
+    <!-- Footer -->
+    <footer class="bg-portto-black text-white pb-[50px] border-t-[10px] border-portto-purple px-[30px] sm:px-0">
+        <div class="container max-w-[1130px] mx-auto flex flex-col sm:flex-row justify-between pt-[50px] sm:pt-[100px] pb-[50px] mb-[50px] relative border-b border-[#585867] gap-[50px] sm:gap-0">
+            <!-- <img src="assets/images/Ellipse.svg" class="absolute h-[300px] top-[70px] right-0 sm:-left-[20px] z-0" alt="icon"> -->
+            <div class="flex flex-row gap-[30px] shrink-0 h-10 z-20 w-20 text-center">
+                <a href="#" class="flex items-center gap-5">
+                    <img src="assets/images/logos/logoOSR.png" alt="logo">
+                    <p class="text-left">Oktaviano Sahru Romadhon</p>
+                </a>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-[30px] sm:gap-[100px] z-10">
+                <div class="flex flex-col gap-5">
+                    <p class="font-bold text-lg">Explore</p>
+                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300">Services</a>
+                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300">Testimonials</a>
+                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300">Pricing</a>
+                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300">About</a>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <p class="font-bold text-lg">Services</p>
+                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300">UI/UX Design</a>
+                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300">Web Development</a>
+                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300">Data Science</a>
+                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300">Digital Marketing</a>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <p class="font-bold text-lg">About</p>
+                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300">My Profile</a>
+                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300">How do I work</a>
+                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300">Achievements</a>
+                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300">Team A</a>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <p class="font-bold text-lg">Connect</p>
+                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300 flex items-center gap-[6px]"><img src="assets/images/icons/call.svg" alt="icon">+1 2208 1996</a>
+                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300 flex items-center gap-[6px]"><img src="assets/images/icons/dribbble.svg" alt="icon">buildwithangga</a>
+                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300 flex items-center gap-[6px]"><img src="assets/images/icons/sms.svg" alt="icon">team@bwa.com</a>
+                </div>
+            </div>
+        </div>
+        <p class="text-sm text-[#A0A0AC] sm:text-center">All Rights Reserved. Copyright BuildWithAngga 2024.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="mobile-nav hidden flex max-w-[330px] w-full bg-white h-screen fixed top-0 right-0 z-50 items-center justify-center">
+        <div class="flex flex-col gap-[50px]">
+            <ul class="flex flex-col gap-[50px] items-center text-white">
+                <li>
+                    <a href="index.html"  class="font-medium text-lg text-[#0B0B1B] text-center hover:text-portto-light-gold transition-all duration-300">Home</a>
+                </li>
+                <li>
+                    <a href=""  class="font-medium text-lg text-[#0B0B1B] text-center hover:text-portto-light-gold transition-all duration-300">Services</a>
+                </li>
+                <li>
+                    <a href=""  class="font-medium text-lg text-[#0B0B1B] text-center hover:text-portto-light-gold transition-all duration-300">Testimonials</a>
+                </li>
+                <li>
+                    <a href=""  class="font-medium text-lg text-[#0B0B1B] text-center hover:text-portto-light-gold transition-all duration-300">Pricing</a>
+                </li>
+                <li>
+                    <a href=""  class="font-medium text-lg text-[#0B0B1B] text-center hover:text-portto-light-gold transition-all duration-300">About</a>
+                </li>
+            </ul>
+            <a href="" class="bg-portto-light-gold font-bold text-lg p-[14px_30px] rounded-full transition-all duration-300 hover:shadow-[0_10px_20px_0_#FFE7C280]">Hire Me</a>
+        </div>
+        <button class="open-mobile-nav w-9 h-9 flex shrink-0 absolute top-[50px] right-[30px]">
+            <img src="assets/images/icons/close-circle.svg" alt="icon">
+        </button>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+            navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.3)';
+            navbar.style.backdropFilter = 'blur(10px)';
+            navbar.style.webkitBackdropFilter = 'blur(10px)';
+            navbar.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.4)';
+            // navbar.style.paddingTop = '16px';
+            // navbar.style.paddingBottom = '16px';
+            } else {
+            navbar.style.backgroundColor = 'transparent';
+            navbar.style.backdropFilter = 'none';
+            navbar.style.webkitBackdropFilter = 'none';
+            navbar.style.boxShadow = 'none';
+            // navbar.style.paddingTop = '30px';
+            // navbar.style.paddingBottom = '30px';
+            }
+        });
+        });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const elementsToAnimate = document.querySelectorAll('h1, p'); // Ganti dengan selector yang lebih spesifik jika perlu
+
+  setTimeout(() => {
+    elementsToAnimate.forEach(element => {
+      element.classList.remove('-translate-y-full', 'opacity-0');
+      element.classList.add('translate-y-0', 'opacity-100');
+    });
+  }, 500); // Penundaan 500ms agar animasi dimulai setelah halaman dimuat
+});
+document.addEventListener("DOMContentLoaded", function() {
+        const button = document.getElementById("explore-button");
+        
+        // Sembunyikan tombol di awal dengan mengubah properti CSS
+        button.style.visibility = "hidden";
+        button.style.opacity = "0";
+        button.style.transition = "opacity 0.5s ease-in-out";
+
+        // Tampilkan tombol setelah 5 detik
+        setTimeout(function() {
+            button.style.visibility = "visible";
+            button.style.opacity = "1";
+        }, 4000); // 4000 milidetik = 4 detik
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const elName = document.getElementById('typed-name');   // baris salam/nama
+    const elRole = document.getElementById('typed-text');   // baris role
+    const elMoto = document.getElementById('typed-moto');   // baris moto (looping)
+
+    // Tambahkan kelas .typer untuk cursor
+    [elName, elRole, elMoto].forEach(el => el && el.classList.add('typer'));
+
+    // Teks
+    const name = "Hello, I’m Oktaviano Sahru Romadhon 👋";
+    const role = "Website Developer"; // ganti ke "Backend Developer" kalau mau
+    const motoList = [
+        "Scalable code. Secure data. Seamless integration.",
+        "Designing reliable systems, building scalable backends.",
+        "Optimizing queries, securing endpoints, and scaling systems.",
+        "Empowering frontend with efficient and secure APIs.",
+    ];
+
+    // Kecepatan/delay
+    const typingSpeed = 50;         // ms per karakter
+    const delayBetweenStages = 500; // jeda antar baris
+    const delayBetweenMotos = 2000; // jeda sebelum ganti moto
+
+    // -- UTIL: ukur teks & kunci width/height agar tidak shifting --
+    function measure(text, refEl) {
+        const measurer = document.createElement('span');
+        const styles = getComputedStyle(refEl);
+        Object.assign(measurer.style, {
+        position: 'absolute',
+        visibility: 'hidden',
+        whiteSpace: 'pre',
+        fontFamily: styles.fontFamily,
+        fontSize: styles.fontSize,
+        fontWeight: styles.fontWeight,
+        letterSpacing: styles.letterSpacing,
+        fontStyle: styles.fontStyle,
+        textTransform: styles.textTransform,
+        lineHeight: styles.lineHeight,
+        });
+        measurer.textContent = text;
+        document.body.appendChild(measurer);
+        const rect = measurer.getBoundingClientRect();
+        document.body.removeChild(measurer);
+        return { w: rect.width, h: rect.height };
+    }
+
+    function fixBox(typedSpan, texts) {
+        if (!typedSpan) return;
+        const sample = Array.isArray(texts) ? texts : [texts];
+        const parent = typedSpan.parentElement; // <p>, <h1>, atau <div>
+        let maxW = 0, maxH = 0;
+        sample.forEach(t => {
+        const { w, h } = measure(t, parent);
+        if (w > maxW) maxW = w;
+        if (h > maxH) maxH = h;
+        });
+        // Kunci ukuran parent agar tidak berubah saat mengetik
+        parent.style.display = 'inline-block';
+        parent.style.width = Math.ceil(maxW) + 'px';
+        parent.style.height = Math.ceil(maxH) + 'px';
+    }
+
+    // Kunci ukuran untuk tiap baris berdasarkan teks terpanjangnya
+    fixBox(elName, name);
+    fixBox(elRole, role);
+    fixBox(elMoto, motoList); // ambil lebar maksimum dari semua moto
+
+    // -- UTIL: ketik/hapus dengan cursor aktif saat proses --
+    function typeWriter(el, fullText, done) {
+        if (!el) return done && done();
+        el.textContent = "";
+        el.classList.add('typing'); // munculkan cursor
+        let i = 0;
+        (function tick() {
+        if (i < fullText.length) {
+            el.textContent += fullText.charAt(i++);
+            setTimeout(tick, typingSpeed);
+        } else {
+            el.classList.remove('typing'); // sembunyikan cursor setelah selesai
+            done && done();
+        }
+        })();
+    }
+
+    function eraseText(el, done) {
+        if (!el) return done && done();
+        el.classList.add('typing'); // cursor aktif saat menghapus
+        let i = el.textContent.length;
+        (function back() {
+        if (i > 0) {
+            el.textContent = el.textContent.slice(0, --i);
+            setTimeout(back, typingSpeed / 2);
+        } else {
+            el.classList.remove('typing');
+            done && done();
+        }
+        })();
+    }
+
+    // -- Loop moto --
+    let motoIndex = 0;
+    function loopMotos() {
+        typeWriter(elMoto, motoList[motoIndex], () => {
+        setTimeout(() => {
+            eraseText(elMoto, () => {
+            motoIndex = (motoIndex + 1) % motoList.length;
+            loopMotos();
+            });
+        }, delayBetweenMotos);
+        });
+    }
+
+    // -- Urutan: Nama → Role → Moto(loop) --
+    typeWriter(elName, name, () => {
+        setTimeout(() => {
+        typeWriter(elRole, role, () => {
+            setTimeout(() => loopMotos(), delayBetweenStages);
+        });
+        }, delayBetweenStages);
+    });
+    });
+</script>
+
+</body>
+</html>
