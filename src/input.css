@@ -13,16 +13,11 @@
         transition: max-height 300ms ease-in-out;
     }
 }
-@layer utilities {
-  /* Span untuk area ketik: tidak wrap & posisi relatif utk kursor */
-  .typer {
-    @apply relative whitespace-pre;
-  }
+   .service-card {
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
 
-  /* Aktifkan kursor kedip (akan di-toggle via JS) */
-  .cursor-caret::after {
-    content: "";
-    /* posisikan di ujung teks */
-    @apply absolute right-0 inset-y-0 w-[2px] bg-current animate-caret;
-  }
-}
+    .service-card.active {
+        opacity: 1;
+        transform: translateY(0);
+    }

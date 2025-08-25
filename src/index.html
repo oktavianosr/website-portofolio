@@ -32,6 +32,10 @@
 
         @keyframes caret-blink { 50% { opacity: 0; } }
 
+  
+
+        #backend-fundamentals .bg-white .text-xs:hover { filter: brightness(0.95); }
+
     </style>
 </head>
 <body class="text-portto-black font-poppins">
@@ -49,8 +53,8 @@
             <button class="open-mobile-nav w-6 h-6 flex shrink-0 sm:hidden">
             <img src="assets/images/icons/menu.svg" alt="icon" />
             </button>
-            <div class="hidden sm:flex gap-[50px] items-center">
-            <ul class="flex gap-[50px] items-center text-white">
+            <div class="hidden sm:flex gap-[25px] items-center">
+            <ul class="flex gap-[30px] items-center text-white">
                 <li>
                 <a href="#" class="font-medium text-lg hover:text-portto-light-gold transition-all duration-300">Home</a>
                 </li>
@@ -61,18 +65,18 @@
                 <button class="text-sm underline"></button>
                 </form>
             </ul>
-            <button class="bg-portto-light-gold font-bold text-lg p-[14px_30px] rounded-full transition-all duration-300 hover:shadow-[0_10px_20px_0_#FFE7C280]">Hire Me</button>
+            <button class="bg-portto-light-gold font-bold text-lg p-[12px_30px] rounded-full transition-all duration-300 hover:shadow-[0_10px_20px_0_#FFE7C280]">Hire Me</button>
             </div>
         </nav>
     </div>
 
-    <section id="Header" class="mt-[50px] flex flex-col gap-[50px] sm:gap-[80px] bg-portto-black relative pt-[40px] sm:pt-[100px] pb-[50px] sm:pb-[150px]">
-        <div class="hero container max-w-[1130px] mx-auto flex flex-col sm:flex-row justify-between items-center relative px-6 sm:px-0 ">
+    <section id="Header" class=" flex flex-col gap-[50px] sm:gap-[80px] bg-portto-black relative pt-[40px] sm:pt-[100px] pb-[50px] sm:pb-[150px]">
+        <div class="hero container max-w-[1130px] mx-auto flex flex-col sm:flex-row justify-between items-center relative px-6 sm:px-0 mt-[80px]">
             <div class="flex flex-col gap-5 sm:gap-[50px] h-fit w-fit text-white z-10 typing-container mr-[25px]">
                 <p class="font-semibold text-lg sm:text-2xl transition-all duration-1000 transform -translate-y-full opacity-0">
                     <span id="typed-name" class="typed-name"></span>
                 </p>
-                <h1 class="font-extrabold text-[32px] sm:text-[80px] leading-[60px] sm:leading-[90px] transition-all duration-1000 transform -translate-y-full opacity-0">
+                <h1 class="font-extrabold text-[30px] sm:text-[60px] leading-[60px] sm:leading-[90px] transition-all duration-1000 transform -translate-y-full opacity-0">
                     <span id="typed-text" class="typed-text"></span>
                 </h1>
                 <div class="mt-2 text-sm sm:text-base text-gray-300" id="moto">
@@ -192,7 +196,7 @@
     <!----- EndOf Navbar -->
 
     <!-- Services -->
-    <section id="Services" class="container max-w-[1130px] mx-auto pt-[485px] sm:pt-[190px] pb-[50px] sm:pb-[100px] px-6 sm:px-0">
+    <section id="Services" class="service-card opacity-0 translate-y-8 container max-w-[1130px] mx-auto pt-[485px] sm:pt-[190px] pb-[50px] sm:pb-[100px] px-6 sm:px-0">
         <div class="flex flex-col gap-[30px] sm:gap-[50px]">
             <div class="flex justify-between items-center">
                 <h2 class="font-extrabold text-[32px] sm:text-[50px] leading-[48px] sm:leading-[70px] w-[240px] sm:w-auto">What I Have Achieved<br class="hidden sm:block"></h2>
@@ -200,7 +204,7 @@
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-[30px]">
                 <div class="p-[30px] sm:p-[50px] pb-0 sm:pb-0 rounded-[30px] flex flex-col gap-[30px] sm:gap-[50px] bg-[#F4F5F8]">
-                    <div class="flex items-center justify-center shrink-0 w-20 h-20 rounded-full bg-portto-purple">
+                    <div class="flex items-center justify-center shrink-0 w-20 h-20 rounded-full bg-portto-purple hover:shadow-md transition **hover:-translate-y-4  hover:scale-105 duration-300**">
                         <img src="assets/images/icons/crown.svg" class="w-10 h-10 object-contain" alt="icon">
                     </div>
                     <div class="flex flex-col gap-5">
@@ -212,7 +216,7 @@
                     </div>
                 </div>
                 <div class="p-[30px] sm:p-[50px] pb-0 sm:pb-0 rounded-[30px] flex flex-col gap-[30px] sm:gap-[50px] bg-[#F4F5F8]">
-                    <div class="flex items-center justify-center shrink-0 w-20 h-20 rounded-full bg-portto-green">
+                    <div class="flex items-center justify-center shrink-0 w-20 h-20 rounded-full bg-portto-green **hover:-translate-y-4  hover:scale-105 duration-300**">
                         <img src="assets/images/icons/code.svg" class="w-10 h-10 object-contain" alt="icon">
                     </div>
                     <div class="flex flex-col gap-5">
@@ -225,7 +229,7 @@
                 </div>
                 <div class="sm:col-span-2 p-[30px] sm:p-[50px] pb-0 sm:pb-0 rounded-[30px] flex flex-col sm:flex-row gap-[30px] sm:gap-[50px] bg-[#F4F5F8]">
                     <div class="flex flex-col gap-[50px]">
-                        <div class="flex items-center justify-center shrink-0 w-20 h-20 rounded-full bg-portto-red">
+                        <div class="flex items-center justify-center shrink-0 w-20 h-20 rounded-full bg-portto-red **hover:-translate-y-4  hover:scale-105 duration-300**">
                             <img src="assets/images/icons/3dcube.svg" class="w-10 h-10 object-contain" alt="icon">
                         </div>
                         <div class="flex flex-col gap-5">
@@ -243,9 +247,221 @@
     </section>
     <!-- EndOf Services -->
 
+            <!-- Portfolio Section: Backend Fundamentals -->
+    <section id="backend-fundamentals" class="service-card opacity-0 translate-y-8  bg-gray-50 py-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <!-- Header -->
+        <div class="text-center">
+        <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900">Backend Fundamentals</h2>
+        <p class="mt-4 text-gray-600 max-w-3xl mx-auto">The core concepts and tools I've mastered to build a secure, fast, and scalable backend.</p>
+        </div>
+
+        <!-- Highlight Badges -->
+        <div class="mt-10 flex flex-wrap justify-center gap-3">
+        <span class="px-3 py-1 rounded-full bg-white shadow text-sm font-medium text-gray-700">RESTful API</span>
+        <span class="px-3 py-1 rounded-full bg-white shadow text-sm font-medium text-gray-700">OAuth2 / JWT</span>
+        <span class="px-3 py-1 rounded-full bg-white shadow text-sm font-medium text-gray-700">MySQL Indexing</span>
+        <!-- <span class="px-3 py-1 rounded-full bg-white shadow text-sm font-medium text-gray-700">Redis Caching</span> -->
+        <span class="px-3 py-1 rounded-full bg-white shadow text-sm font-medium text-gray-700">Queue & Jobs</span>
+        <span class="px-3 py-1 rounded-full bg-white shadow text-sm font-medium text-gray-700">CI/CD</span>
+        <span class="px-3 py-1 rounded-full bg-white shadow text-sm font-medium text-gray-700">Docker</span>
+        <span class="px-3 py-1 rounded-full bg-white shadow text-sm font-medium text-gray-700">Testing</span>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <!-- Core Programming & Logic -->
+        <article class="group h-full">
+            <div class="h-full bg-white rounded-2xl shadow-sm ring-1 ring-gray-100 p-6 hover:shadow-md transition **hover:-translate-y-4  hover:scale-105 duration-300**">
+            <div class="flex items-center gap-3 ">
+                <div class="p-2 rounded-xl bg-indigo-50">
+                <!-- Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20l9-5-9-5-9 5 9 5z"/><path d="M12 12l9-5-9-5-9 5 9 5z"/></svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">Core Programming & Logic</h3>
+            </div>
+            <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+                <li>Struktur data & algoritma dasar</li>
+                <li>OOP & Design Patterns (Repository, Service, Factory)</li>
+                <li>Error handling & debugging</li>
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">PHP</span>
+                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Laravel</span>
+                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Composer</span>
+            </div>
+            </div>
+        </article>
+
+        <!-- Web & API Development -->
+        <article class="group h-full">
+            <div class="h-full bg-white rounded-2xl shadow-sm ring-1 ring-gray-100 p-6 hover:shadow-md transition **hover:-translate-y-4  hover:scale-105 duration-300**">
+            <div class="flex items-center gap-3">
+                <div class="p-2 rounded-xl bg-blue-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10"/><path d="M7 12h6"/></svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">Web & API Development</h3>
+            </div>
+            <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+                <li>RESTful API (CRUD, pagination, filtering, versioning)</li>
+                <li>AuthN/AuthZ (OAuth2, JWT, RBAC)</li>
+                <li>Webhook & event-driven</li>
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Postman</span>
+                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Swagger</span>
+                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Sanctum/Passport</span>
+            </div>
+            </div>
+        </article>
+
+        <!-- Database Management -->
+        <article class="group h-full">
+            <div class="h-full bg-white rounded-2xl shadow-sm ring-1 ring-gray-100 p-6 hover:shadow-md transition **hover:-translate-y-4  hover:scale-105 duration-300**">
+            <div class="flex items-center gap-3">
+                <div class="p-2 rounded-xl bg-emerald-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M21 12c0 1.7-4 3-9 3s-9-1.3-9-3"/></svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">Database Management</h3>
+            </div>
+            <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+                <li>SQL design, normalisasi, indexing</li>
+                <li>ORM (Eloquent), transaksi (ACID)</li>
+                <!-- <li>NoSQL (Redis) untuk caching</li> -->
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">MySQL</span>
+                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">PostgreSQL</span>
+                <!-- <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Redis</span> -->
+            </div>
+            </div>
+        </article>
+
+        <!-- Caching & Performance -->
+        <article class="group h-full">
+            <div class="h-full bg-white rounded-2xl shadow-sm ring-1 ring-gray-100 p-6 hover:shadow-md transition **hover:-translate-y-4  hover:scale-105 duration-300**">
+            <div class="flex items-center gap-3">
+                <div class="p-2 rounded-xl bg-orange-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v7"/><path d="M22 13a8.1 8.1 0 0 1-8 8H4a2 2 0 0 1-2-2v-3"/><path d="M22 13A10 10 0 0 0 12 3"/></svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">Caching & Performance</h3>
+            </div>
+            <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+                <li>Optimasi query & N+1 guard</li>
+                <!-- <li>In-memory cache (Redis)</li> -->
+                <li>Queue, jobs, & schedulers</li>
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Horizon</span>
+                <!-- <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Supervisor</span> -->
+                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Blackfire</span>
+            </div>
+            </div>
+        </article>
+
+        <!-- Security & Best Practices -->
+        <article class="group h-full">
+            <div class="h-full bg-white rounded-2xl shadow-sm ring-1 ring-gray-100 p-6 hover:shadow-md transition **hover:-translate-y-4  hover:scale-105 duration-300**">
+            <div class="flex items-center gap-3">
+                <div class="p-2 rounded-xl bg-rose-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-rose-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">Security & Best Practices</h3>
+            </div>
+            <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+                <li>Validasi input & sanitasi</li>
+                <li>Mitigasi SQLi, XSS, CSRF</li>
+                <li>HTTPS, CORS, rate limiting</li>
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Laravel Validation</span>
+                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Helmet/CSP</span>
+                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">OWASP</span>
+            </div>
+            </div>
+        </article>
+
+        <!-- Scalability & Architecture -->
+        <article class="group h-full">
+            <div class="h-full bg-white rounded-2xl shadow-sm ring-1 ring-gray-100 p-6 hover:shadow-md transition **hover:-translate-y-4  hover:scale-105 duration-300**">
+            <div class="flex items-center gap-3">
+                <div class="p-2 rounded-xl bg-purple-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6.5 20 3.5-3.5"/><path d="M20 7.5V20a2 2 0 0 1-2 2H6.5"/><path d="m14 4 6 6"/><path d="M14 4v6h6"/></svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">Scalability & Architecture</h3>
+            </div>
+            <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+                <li>MVC, layered (Service/Repository)</li>
+                <!-- <li>Microservices & message broker</li> -->
+                <li>Containerization & orchestration</li>
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Docker</span>
+                <!-- <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Kubernetes</span> -->
+                <!-- <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">gRPC/REST</span> -->
+            </div>
+            </div>
+        </article>
+
+        <!-- Testing & Quality Assurance -->
+        <article class="group h-full">
+            <div class="h-full bg-white rounded-2xl shadow-sm ring-1 ring-gray-100 p-6 hover:shadow-md transition **hover:-translate-y-4  hover:scale-105 duration-300**">
+            <div class="flex items-center gap-3">
+                <div class="p-2 rounded-xl bg-teal-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 11 2-2 4 4 8-8"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">Testing & QA</h3>
+            </div>
+            <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+                <li>Unit & integration testing</li>
+                <!-- <li>Coverage & automation</li>
+                <li>TDD/BDD workflow</li> -->
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">PHPUnit</span>
+                <!-- <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Pest</span>
+                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Mockery</span> -->
+            </div>
+            </div>
+        </article>
+
+        <!-- Tools & Ecosystem -->
+        <article class="group h-full xl:col-span-3">
+            <div class="h-full bg-white rounded-2xl shadow-sm ring-1 ring-gray-100 p-6 hover:shadow-md transition **hover:-translate-y-4  hover:scale-105 duration-300**">
+            <div class="flex items-center gap-3">
+                <div class="p-2 rounded-xl bg-gray-100">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M19 9H9v10"/></svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">Tools & Ecosystem</h3>
+            </div>
+            <div class="mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+                <span class="px-3 py-2 rounded-lg bg-gray-50 ring-1 ring-gray-100 text-sm text-gray-700">Git & GitHub Flow</span>
+                <span class="px-3 py-2 rounded-lg bg-gray-50 ring-1 ring-gray-100 text-sm text-gray-700">GitHub Actions</span>
+                <span class="px-3 py-2 rounded-lg bg-gray-50 ring-1 ring-gray-100 text-sm text-gray-700">AWS (EC2, RDS, S3)</span>
+                <span class="px-3 py-2 rounded-lg bg-gray-50 ring-1 ring-gray-100 text-sm text-gray-700">Nginx</span>
+                <span class="px-3 py-2 rounded-lg bg-gray-50 ring-1 ring-gray-100 text-sm text-gray-700">Apache</span>
+                <span class="px-3 py-2 rounded-lg bg-gray-50 ring-1 ring-gray-100 text-sm text-gray-700">Docker</span>
+                <span class="px-3 py-2 rounded-lg bg-gray-50 ring-1 ring-gray-100 text-sm text-gray-700">Linux CLI</span>
+                <!-- <span class="px-3 py-2 rounded-lg bg-gray-50 ring-1 ring-gray-100 text-sm text-gray-700">Monitoring (Grafana/ELK)</span> -->
+                <span class="px-3 py-2 rounded-lg bg-gray-50 ring-1 ring-gray-100 text-sm text-gray-700">Postman</span>
+            </div>
+            </div>
+        </article>
+        </div>
+
+        <!-- Case Studies CTA -->
+        <!-- <div class="mt-14 text-center">
+        <p class="text-sm text-gray-500">Lihat juga studi kasus saya untuk contoh penerapan nyata.</p>
+        <a href="#case-studies" class="inline-flex items-center mt-3 px-4 py-2 rounded-xl bg-gray-900 text-white text-sm font-medium hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
+            Lihat Case Studies
+        </a>
+        </div> -->
+    </div>
+    </section>
+    
 
     <!-- Workflow -->
-    <section id="Workflow" class="container max-w-[1130px] mx-auto pt-[50px] sm:pt-[100px] pb-[475px] sm:pb-[200px] relative">
+    <section id="Workflow" class=" service-card opacity-0 translate-y-8 container max-w-[1130px] mx-auto pt-[50px] sm:pt-[100px] pb-[475px] sm:pb-[200px] relative">
         <div class="flex flex-col gap-[50px] justify-center">
             <h2 class="font-extrabold text-[32px] sm:text-[50px] leading-[48px] sm:leading-[70px] text-center">Learning By Doing <br>Hands-on Experience</h2>
             <div class="flex flex-col sm:flex-row justify-between items-center px-[21.5px] sm:px-0 gap-[70px] sm:gap-0">
@@ -283,7 +499,7 @@
 
 
     <!-- Hero -->
-    <section id="Testimonials" class="bg-[#F4F5F8] animate-fadeIn">
+    <section id="Testimonials" class="service-card opacity-0 translate-y-8 bg-[#F4F5F8] animate-fadeIn">
         <div class="container max-w-[1130px] mx-auto pt-[180px] pb-[50px] sm:pb-[100px] px-6 sm:px-0">
             <h2 class="font-extrabold text-[32px] sm:text-[50px] leading-[48px] sm:leading-[70px] text-center">
                 My Certificates
@@ -339,7 +555,7 @@
     <!-- End Hero -->
 
     <!-- FAQ -->
-    <section id="FAQ" class="container max-w-[1130px] mx-auto px-6 sm:px-0">
+    <!-- <section id="FAQ" class="container max-w-[1130px] mx-auto px-6 sm:px-0">
         <div class="flex flex-col sm:flex-row gap-[50px] sm:gap-[70px] items-center pt-[50px] sm:pt-[100px] pb-[100px] sm:pb-[150px]">
             <div class="flex flex-col gap-[30px]">
                 <div class="w-20 h-20 flex shrink-0 rounded-full bg-portto-purple items-center justify-center">
@@ -387,33 +603,35 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End FAQ -->
+
+
+
+
+
 
     <!-- Footer -->
     <footer class="bg-portto-black text-white pb-[50px] border-t-[10px] border-portto-purple px-[30px] sm:px-0">
-        <div class="container max-w-[1130px] mx-auto flex flex-col sm:flex-row justify-between pt-[50px] sm:pt-[100px] pb-[50px] mb-[50px] relative border-b border-[#585867] gap-[50px] sm:gap-0">
+        <div class="container max-w-[1130px] mx-auto flex flex-col sm:flex-row justify-between pt-[25px] sm:pt-[50px] pb-[25px] mb-[50px] relative border-b border-[#585867] gap-[50px] sm:gap-0">
             <!-- <img src="assets/images/Ellipse.svg" class="absolute h-[300px] top-[70px] right-0 sm:-left-[20px] z-0" alt="icon"> -->
-            <div class="flex flex-row gap-[30px] shrink-0 h-10 z-20 w-20 text-center">
+            <div class="flex flex-row gap-[30px] shrink-0 h-10 z-20 w-10 text-center">
                 <a href="#" class="flex items-center gap-5">
                     <img src="assets/images/logos/logoOSR.png" alt="logo">
                     <p class="text-left">Oktaviano Sahru Romadhon</p>
                 </a>
             </div>
             <div class="flex flex-col sm:flex-row gap-[30px] sm:gap-[100px] z-10">
-                <div class="flex flex-col gap-5">
+                <!-- <div class="flex flex-col gap-5">
                     <p class="font-bold text-lg">Explore</p>
                     <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300">Services</a>
                     <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300">Testimonials</a>
                     <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300">Pricing</a>
                     <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300">About</a>
-                </div>
+                </div> -->
                 <div class="flex flex-col gap-5">
                     <p class="font-bold text-lg">Services</p>
-                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300">UI/UX Design</a>
                     <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300">Web Development</a>
-                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300">Data Science</a>
-                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300">Digital Marketing</a>
                 </div>
                 <div class="flex flex-col gap-5">
                     <p class="font-bold text-lg">About</p>
@@ -424,13 +642,13 @@
                 </div>
                 <div class="flex flex-col gap-5">
                     <p class="font-bold text-lg">Connect</p>
-                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300 flex items-center gap-[6px]"><img src="assets/images/icons/call.svg" alt="icon">+1 2208 1996</a>
-                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300 flex items-center gap-[6px]"><img src="assets/images/icons/dribbble.svg" alt="icon">buildwithangga</a>
-                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300 flex items-center gap-[6px]"><img src="assets/images/icons/sms.svg" alt="icon">team@bwa.com</a>
+                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300 flex items-center gap-[6px]"><img src="assets/images/icons/call.svg" alt="icon">+62 822 4534 9263</a>
+                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300 flex items-center gap-[6px]"><img src="assets/images/icons/dribbble.svg" alt="icon">Oktaviano Sahru Romadhon</a>
+                    <a href="" class="font-medium hover:font-semibold hover:text-portto-light-gold transition-all duration-300 flex items-center gap-[6px]"><img src="assets/images/icons/sms.svg" alt="icon">oktavianosahru.r@gmail.com</a>
                 </div>
             </div>
         </div>
-        <p class="text-sm text-[#A0A0AC] sm:text-center">All Rights Reserved. Copyright BuildWithAngga 2024.</p>
+        <p class="text-sm text-[#A0A0AC] sm:text-center">All Rights Reserved. Copyright OSR 2025.</p>
     </footer>
     <!-- End Footer -->
 
@@ -483,156 +701,177 @@
             }
         });
         });
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const elementsToAnimate = document.querySelectorAll('h1, p'); // Ganti dengan selector yang lebih spesifik jika perlu
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const elementsToAnimate = document.querySelectorAll('h1, p'); // Ganti dengan selector yang lebih spesifik jika perlu
 
-  setTimeout(() => {
-    elementsToAnimate.forEach(element => {
-      element.classList.remove('-translate-y-full', 'opacity-0');
-      element.classList.add('translate-y-0', 'opacity-100');
-    });
-  }, 500); // Penundaan 500ms agar animasi dimulai setelah halaman dimuat
-});
-document.addEventListener("DOMContentLoaded", function() {
-        const button = document.getElementById("explore-button");
-        
-        // Sembunyikan tombol di awal dengan mengubah properti CSS
-        button.style.visibility = "hidden";
-        button.style.opacity = "0";
-        button.style.transition = "opacity 0.5s ease-in-out";
-
-        // Tampilkan tombol setelah 5 detik
-        setTimeout(function() {
-            button.style.visibility = "visible";
-            button.style.opacity = "1";
-        }, 4000); // 4000 milidetik = 4 detik
-    });
-</script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-    const elName = document.getElementById('typed-name');   // baris salam/nama
-    const elRole = document.getElementById('typed-text');   // baris role
-    const elMoto = document.getElementById('typed-moto');   // baris moto (looping)
-
-    // Tambahkan kelas .typer untuk cursor
-    [elName, elRole, elMoto].forEach(el => el && el.classList.add('typer'));
-
-    // Teks
-    const name = "Hello, I’m Oktaviano Sahru Romadhon 👋";
-    const role = "Website Developer"; // ganti ke "Backend Developer" kalau mau
-    const motoList = [
-        "Scalable code. Secure data. Seamless integration.",
-        "Designing reliable systems, building scalable backends.",
-        "Optimizing queries, securing endpoints, and scaling systems.",
-        "Empowering frontend with efficient and secure APIs.",
-    ];
-
-    // Kecepatan/delay
-    const typingSpeed = 50;         // ms per karakter
-    const delayBetweenStages = 500; // jeda antar baris
-    const delayBetweenMotos = 2000; // jeda sebelum ganti moto
-
-    // -- UTIL: ukur teks & kunci width/height agar tidak shifting --
-    function measure(text, refEl) {
-        const measurer = document.createElement('span');
-        const styles = getComputedStyle(refEl);
-        Object.assign(measurer.style, {
-        position: 'absolute',
-        visibility: 'hidden',
-        whiteSpace: 'pre',
-        fontFamily: styles.fontFamily,
-        fontSize: styles.fontSize,
-        fontWeight: styles.fontWeight,
-        letterSpacing: styles.letterSpacing,
-        fontStyle: styles.fontStyle,
-        textTransform: styles.textTransform,
-        lineHeight: styles.lineHeight,
+    setTimeout(() => {
+        elementsToAnimate.forEach(element => {
+        element.classList.remove('-translate-y-full', 'opacity-0');
+        element.classList.add('translate-y-0', 'opacity-100');
         });
-        measurer.textContent = text;
-        document.body.appendChild(measurer);
-        const rect = measurer.getBoundingClientRect();
-        document.body.removeChild(measurer);
-        return { w: rect.width, h: rect.height };
-    }
+    }, 500); // Penundaan 500ms agar animasi dimulai setelah halaman dimuat
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+            const button = document.getElementById("explore-button");
+            
+            // Sembunyikan tombol di awal dengan mengubah properti CSS
+            button.style.visibility = "hidden";
+            button.style.opacity = "0";
+            button.style.transition = "opacity 0.5s ease-in-out";
 
-    function fixBox(typedSpan, texts) {
-        if (!typedSpan) return;
-        const sample = Array.isArray(texts) ? texts : [texts];
-        const parent = typedSpan.parentElement; // <p>, <h1>, atau <div>
-        let maxW = 0, maxH = 0;
-        sample.forEach(t => {
-        const { w, h } = measure(t, parent);
-        if (w > maxW) maxW = w;
-        if (h > maxH) maxH = h;
+            // Tampilkan tombol setelah 5 detik
+            setTimeout(function() {
+                button.style.visibility = "visible";
+                button.style.opacity = "1";
+            }, 4000); // 4000 milidetik = 4 detik
         });
-        // Kunci ukuran parent agar tidak berubah saat mengetik
-        parent.style.display = 'inline-block';
-        parent.style.width = Math.ceil(maxW) + 'px';
-        parent.style.height = Math.ceil(maxH) + 'px';
-    }
+    </script>
 
-    // Kunci ukuran untuk tiap baris berdasarkan teks terpanjangnya
-    fixBox(elName, name);
-    fixBox(elRole, role);
-    fixBox(elMoto, motoList); // ambil lebar maksimum dari semua moto
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const elName = document.getElementById('typed-name');   // baris salam/nama
+        const elRole = document.getElementById('typed-text');   // baris role
+        const elMoto = document.getElementById('typed-moto');   // baris moto (looping)
 
-    // -- UTIL: ketik/hapus dengan cursor aktif saat proses --
-    function typeWriter(el, fullText, done) {
-        if (!el) return done && done();
-        el.textContent = "";
-        el.classList.add('typing'); // munculkan cursor
-        let i = 0;
-        (function tick() {
-        if (i < fullText.length) {
-            el.textContent += fullText.charAt(i++);
-            setTimeout(tick, typingSpeed);
-        } else {
-            el.classList.remove('typing'); // sembunyikan cursor setelah selesai
-            done && done();
-        }
-        })();
-    }
+        // Tambahkan kelas .typer untuk cursor
+        [elName, elRole, elMoto].forEach(el => el && el.classList.add('typer'));
 
-    function eraseText(el, done) {
-        if (!el) return done && done();
-        el.classList.add('typing'); // cursor aktif saat menghapus
-        let i = el.textContent.length;
-        (function back() {
-        if (i > 0) {
-            el.textContent = el.textContent.slice(0, --i);
-            setTimeout(back, typingSpeed / 2);
-        } else {
-            el.classList.remove('typing');
-            done && done();
-        }
-        })();
-    }
+        // Teks
+        const name = "Hello, I’m Oktaviano Sahru Romadhon 👋";
+        const role = "Website Developer"; // ganti ke "Backend Developer" kalau mau
+        const motoList = [
+            "Scalable code. Secure data. Seamless integration.",
+            "Designing reliable systems, building scalable backends.",
+            "Optimizing queries, securing endpoints, and scaling systems.",
+            "Empowering frontend with efficient and secure APIs.",
+        ];
 
-    // -- Loop moto --
-    let motoIndex = 0;
-    function loopMotos() {
-        typeWriter(elMoto, motoList[motoIndex], () => {
-        setTimeout(() => {
-            eraseText(elMoto, () => {
-            motoIndex = (motoIndex + 1) % motoList.length;
-            loopMotos();
+        // Kecepatan/delay
+        const typingSpeed = 50;         // ms per karakter
+        const delayBetweenStages = 500; // jeda antar baris
+        const delayBetweenMotos = 2000; // jeda sebelum ganti moto
+
+        // -- UTIL: ukur teks & kunci width/height agar tidak shifting --
+        function measure(text, refEl) {
+            const measurer = document.createElement('span');
+            const styles = getComputedStyle(refEl);
+            Object.assign(measurer.style, {
+            position: 'absolute',
+            visibility: 'hidden',
+            whiteSpace: 'pre',
+            fontFamily: styles.fontFamily,
+            fontSize: styles.fontSize,
+            fontWeight: styles.fontWeight,
+            letterSpacing: styles.letterSpacing,
+            fontStyle: styles.fontStyle,
+            textTransform: styles.textTransform,
+            lineHeight: styles.lineHeight,
             });
-        }, delayBetweenMotos);
-        });
-    }
+            measurer.textContent = text;
+            document.body.appendChild(measurer);
+            const rect = measurer.getBoundingClientRect();
+            document.body.removeChild(measurer);
+            return { w: rect.width, h: rect.height };
+        }
 
-    // -- Urutan: Nama → Role → Moto(loop) --
-    typeWriter(elName, name, () => {
-        setTimeout(() => {
-        typeWriter(elRole, role, () => {
-            setTimeout(() => loopMotos(), delayBetweenStages);
+        function fixBox(typedSpan, texts) {
+            if (!typedSpan) return;
+            const sample = Array.isArray(texts) ? texts : [texts];
+            const parent = typedSpan.parentElement; // <p>, <h1>, atau <div>
+            let maxW = 0, maxH = 0;
+            sample.forEach(t => {
+            const { w, h } = measure(t, parent);
+            if (w > maxW) maxW = w;
+            if (h > maxH) maxH = h;
+            });
+            // Kunci ukuran parent agar tidak berubah saat mengetik
+            parent.style.display = 'inline-block';
+            parent.style.width = Math.ceil(maxW) + 'px';
+            parent.style.height = Math.ceil(maxH) + 'px';
+        }
+
+        // Kunci ukuran untuk tiap baris berdasarkan teks terpanjangnya
+        fixBox(elName, name);
+        fixBox(elRole, role);
+        fixBox(elMoto, motoList); // ambil lebar maksimum dari semua moto
+
+        // -- UTIL: ketik/hapus dengan cursor aktif saat proses --
+        function typeWriter(el, fullText, done) {
+            if (!el) return done && done();
+            el.textContent = "";
+            el.classList.add('typing'); // munculkan cursor
+            let i = 0;
+            (function tick() {
+            if (i < fullText.length) {
+                el.textContent += fullText.charAt(i++);
+                setTimeout(tick, typingSpeed);
+            } else {
+                el.classList.remove('typing'); // sembunyikan cursor setelah selesai
+                done && done();
+            }
+            })();
+        }
+
+        function eraseText(el, done) {
+            if (!el) return done && done();
+            el.classList.add('typing'); // cursor aktif saat menghapus
+            let i = el.textContent.length;
+            (function back() {
+            if (i > 0) {
+                el.textContent = el.textContent.slice(0, --i);
+                setTimeout(back, typingSpeed / 2);
+            } else {
+                el.classList.remove('typing');
+                done && done();
+            }
+            })();
+        }
+
+        // -- Loop moto --
+        let motoIndex = 0;
+        function loopMotos() {
+            typeWriter(elMoto, motoList[motoIndex], () => {
+            setTimeout(() => {
+                eraseText(elMoto, () => {
+                motoIndex = (motoIndex + 1) % motoList.length;
+                loopMotos();
+                });
+            }, delayBetweenMotos);
+            });
+        }
+
+        // -- Urutan: Nama → Role → Moto(loop) --
+        typeWriter(elName, name, () => {
+            setTimeout(() => {
+            typeWriter(elRole, role, () => {
+                setTimeout(() => loopMotos(), delayBetweenStages);
+            });
+            }, delayBetweenStages);
         });
-        }, delayBetweenStages);
-    });
-    });
-</script>
+        });
+    </script>
+
+    <script>
+    const serviceCards = document.querySelectorAll('.service-card');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.3
+        });
+
+        serviceCards.forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+
 
 </body>
 </html>
